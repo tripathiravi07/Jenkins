@@ -1,0 +1,28 @@
+QA Server
+apt-get update 
+apt-get install -y tomcat8
+apt-get install -y tomcat8-admin
+
+go to cd /etc/tomcat8
+vi tomcat-users.xml
+<tomcat-users>
+		<user username="ravi" password="ravi@080" roles="manager-script"/>
+</tomcat-users>
+sudo service tomcat8 restart
+
+Dev Server
+
+apt-get update 
+apt-get install -y tomcat8
+apt-get install -y tomcat8-admin
+
+go to cd /etc/tomcat8
+vi tomcat-users.xml
+<tomcat-users>
+		<user username="ravi" password="ravi@080" roles="manager-script"/>
+</tomcat-users>
+sudo service tomcat8 restart
+
+Reporsitory for practice
+https://github.com/intelliqittrainings/maven
+https://github.com/selenium-saikrishna/FunctionalTesting
