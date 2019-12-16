@@ -1,0 +1,21 @@
+Go to security settings of your application.
+
+1)Enable less secure app
+2)Create 2 Way authentication
+3)Create an app password
+
+SMTP setting
+
+smtp server: smtp.gmail.com
+
+SSL: yes
+
+port: 465
+
+Tick on use smtp setting
+
+username: your_gmail@gmail.com
+password: put the app password that you have created
+
+test it with an email address.
+it will work.
