@@ -1,0 +1,11 @@
+Below bootstrap need to be pass creating QA and Prod env for Jenkins
+
+#!/bin/bash
+sudo su
+apt-get update 
+apt-get install -y tomcat8
+apt-get install -y tomcat8-admin
+cd /etc/tomcat8
+rm -rf tomcat-users.xml
+echo -e '<tomcat-users>\n              <user username="ravi" password="ravi@080" roles="manager-script"/>\n</tomcat-users>' >> tomcat-users.xml
+sudo service tomcat8 restart
